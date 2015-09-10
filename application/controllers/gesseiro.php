@@ -2,9 +2,25 @@
 
 class Gesseiro extends CI_Controller {
 
-	public function index()
+public function index()
+{
+	$this->load->view('cadastro');
+}
+
+	public function novo()
 	{
-		$this->load->view('cadastro');
+		$dados = array(
+			'nome'=>$this->input->post('nome'),
+			'telefone¹'=>$this->input->post('telefoneA'),
+			'telefone²' => $this->input->post('telefoneB'),
+			'telefone³' => $this->input->post('telefoneC'),
+			'endereco'=>$this->input->post('endereco'),
+			'descricao'=>$this->input->post('descricao')
+			);
+		print_r($dados);
+		//$this->load->model("gesseiro_model");
+		//$result = $this->gesseiro_model->novo($dados);
+		//$this->load->view('cadastro');
 	}
 
 }

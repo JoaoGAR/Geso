@@ -10,13 +10,13 @@
 <body>
 	<div class="container">
 		<table class="table table-hover">
-			<caption class="text-center">Gesseiros cadastrados</caption>
+			<caption class="alert alert-info text-center"><b>Gesseiros cadastrados</caption>
 			<thead>
 				<tr class="active">
 					<td>Nome</td>
 					<td>Telefones</td>
 					<td>Endereço</td>
-					<td>Preço</td>
+					<td>Descricao</td>
 				</tr>
 			</thead>
 			<tbody>
@@ -24,7 +24,7 @@
 					<td>Nome</td>
 					<td>Telefones</td>
 					<td>Endereço</td>
-					<td>Preço</td>
+					<td>Descricao</td>
 				</tr>
 			</tbody>
 		</table>
