@@ -1,7 +1,7 @@
 <?php
 class gesseiro_model extends CI_Model
 {
-	public function index()
+	public function listar()
 	{
 		$this->db->select('*');
 		$this->db->from('gesseiro');

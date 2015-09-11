@@ -10,7 +10,7 @@
 <body>
 	<div class="container">
 		<table class="table table-hover">
-			<caption class="alert alert-info text-center"><b>Gesseiros cadastrados</caption>
+			<legend class="alert alert-info text-center col-md-6 col-md-offset-3"><b>Gesseiros cadastrados</legend>
 			<thead>
 				<tr class="active">
 					<td>Nome</td>
@@ -20,12 +20,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>Nome</td>
-					<td>Telefones</td>
-					<td>Endereço</td>
-					<td>Descricao</td>
-				</tr>
+				<?php foreach($gesseiros as $gesseiro) :?>
+					<tr>
+						<td><?= $gesseiro["nome"]?></td>
+						<td><?= $gesseiro["telefoneA"]?></td>
+						<td><?= $gesseiro["endereco"]?></td>
+						<td><?= $gesseiro["descricao"]?></td>
+					</tr>
+				<?php  endforeach; ?>
 			</tbody>
 		</table>
 	</div>

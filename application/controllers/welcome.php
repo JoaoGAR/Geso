@@ -19,7 +19,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('lista');
+		$this->load->model("gesseiro_model");
+		$gesseiros = $this->gesseiro_model->listar();
+		$dados = array(
+			"gesseiros" => $gesseiros,
+			);
+		$this->load->view('lista',$dados);
 	}
 
 }
